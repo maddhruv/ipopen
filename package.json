@@ -1,0 +1,21 @@
+{
+  "name": "ipopen",
+  "version": "0.0.1",
+  "description": "The IP-Geolocation adapter for node.",
+  "main": "index.js",
+  "keywords": [
+    "geo",
+    "ip"
+  ],
+  "author": "",
+  "scripts": {
+    "prepublishOnly" : "npm-audit-ok && package-ok"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "prepublish-ok": "^0.4.0"
+  }
+}
