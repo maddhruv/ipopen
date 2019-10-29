@@ -2,7 +2,7 @@
 
 The IP-Geolocation adapter 🎧 for node.
 
-## Install 😰
+## Install
 
 `npm i ipopen`
 
@@ -13,7 +13,8 @@ The IP-Geolocation adapter 🎧 for node.
 ```js
 const ipopen = require('ipopen');
 
-ipopen('157.37.165.132', (geo) => {
+ipopen('157.37.165.132', (geo, err) => {
+  if (err) throw err
   console.log(geo);
 })
 ```
@@ -24,7 +25,8 @@ ipopen('157.37.165.132', (geo) => {
 const ipopen = require('ipopen');
 
 ipopen('157.37.165.132')
-  .then(geo => console.log(geo));
+  .then(geo => console.log(geo))
+  .catch(err => console.error(err));
 ```
 
 ### The async/await 💓 way
@@ -33,7 +35,11 @@ ipopen('157.37.165.132')
 const ipopen = require('ipopen');
 
 (async () => {
-  console.log(await ipopen('157.37.165.132'));
+  try {
+    console.log(await ipopen('157.37.165.132'))
+  } catch (err) {
+    console.error(err)
+  }
 })()
 ```
 
