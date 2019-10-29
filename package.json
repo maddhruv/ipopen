@@ -5,16 +5,16 @@
   "main": "index.js",
   "keywords": [
     "geo",
-    "ip"
+    "ip",
+    "geolocation",
+    "ipgeolocation",
+    "openip"
   ],
-  "author": "",
+  "author": "Dhruv Jain <dhruvjainpenny@gmail.com>",
   "scripts": {
-    "prepublishOnly" : "npm-audit-ok && package-ok"
+    "prepublishOnly": "npm-audit-ok && package-ok"
   },
   "license": "ISC",
-  "dependencies": {
-    "node-fetch": "^2.6.0"
-  },
   "devDependencies": {
     "prepublish-ok": "^0.4.0"
   }
