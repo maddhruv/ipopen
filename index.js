@@ -9,8 +9,8 @@ module.exports = function (ip, cb) {
         return cb ? cb(data, null) : resolve(data)
       })
     })
-    .on('error', (err) => {
-      reject(err)
-    })
+      .on('error', (err) => {
+        reject(err)
+      })
   })
 }
